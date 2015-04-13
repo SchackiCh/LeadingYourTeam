@@ -26,7 +26,7 @@
 
 (function () {
     'use strict';
-    angular.module('mainLeader', ['mainLeader.controllers', 'mainLeader.directives', 'ngResource']);
+    angular.module('mainLeader', ['mainLeader.controllers', 'mainLeader.directives']);
     angular.module('mainLeader.directives', []);
     angular.module('mainLeader.controllers', []);
 })();
