@@ -3,7 +3,7 @@
     angular.module("mainLeader.controllers")
         .controller('announcement', ['$scope', function ($scope) {
             var refresh = function () {
-                //$scope.todos = storage.getAll();
+                $scope.newAnnouncementModel = storage.getAll();
             }
 
             $scope.addAnnouncement = function () {

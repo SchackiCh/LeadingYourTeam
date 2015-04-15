@@ -9,24 +9,52 @@
     <!-- BlankCordovaApp1 references -->
     <link href="css/index.css" rel="stylesheet" />
 </head>
-<body ng-app="mainLeader">
+<body ng-app="mainLeader" ng-init="spielername='Schackhampton';credit=3000">
+    <div>
+        <b>Welcome {{spielername}}!</b>
+        <br/>
+        Credit: {{credit|currency:"&euro; "}}
+    </div>
     <section id="leadapp" ng-controller="announcement">
         <header id="header">
-            <div id="headerBand"><h3>{{ 3 + 5 }}</h3></div>
+            <div id="headerBand"><h3 style="background:yellow">{{ 3 + 5 }}</h3></div>
             <input id="new-todo" placeholder="What needs to be announced?" ng-text-change="addAnnouncement()" ng-model="newAnnouncementModel" autofocus>
         </header>
     </section>
+    <div>
+        <textarea style="width:100%">
+Kodex:
+
+Hallo Ritter, bitte beachtet den Kodex, konkret folgende Punkte:
+
+-) Keine brennenden Burgen angreifen von aktiven Spielern, außer es kam ein Angriff aus der brennenden Burg
+
+-) Dörfer sowie Außenposten dürfen nicht geklaut werden
+
+-) Keine Angriffe auf deutlich schwächere Gegner (10 Level Unterschied nach oben und unten)
+
+-) Keine Sabotage
+
+-) Angriffe auf APs nicht erlaubt
+
+-) Räumungsangriffe sind nicht erlaubt
+
+-) Bei Regelverstößen von Feinden an unserer Allianz ist es unverzüglich vor jeglicher Handlungen bei Haubi oder Schackhampton zu melden
+
+Bei Kodexbrüche gibt es Konsequenzen.
+
+Lg
+    </textarea>
+    </div>
 
     <!-- Cordova reference, this is added to your app when it's built. -->
     <script src="cordova.js"></script>
     <script src="scripts/platformOverrides.js"></script>
-
     <!-- CordovaToDoApp_AngularJS references -->
     <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-resource.js"></script>-->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-resource.min.js"></script>
-
 
     <script src="scripts/index.js"></script>
     <script src="scripts/controllers.js"></script>
